@@ -13,7 +13,7 @@ This starter is based off [this awesome template](https://github.com/mattjenning
 
 I've added a couple more exports to `src/lib/info.js` file for social media links. Update them with your own info and links, or delete the SocialLinks component all together, up to you!
 
-## I also added the search bar on the posts page, it currently searches the posts by title.
+I also added the search bar on the posts page, it currently searches the posts by title.
 
 ## Additional Components
 
