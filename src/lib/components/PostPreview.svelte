@@ -26,7 +26,7 @@
   <div class="flex-1">{@html post.preview.html}</div>
   <slot name="actions">
     <div class="flex justify-end w-full">
-      <ButtonLink href={`/posts/${post.slug}`}>Read More</ButtonLink>
+      <ButtonLink href={`/posts/${post.slug}`} raised={false}>Read More</ButtonLink>
     </div>
   </slot>
 </div>

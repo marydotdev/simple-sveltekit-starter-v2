@@ -80,6 +80,7 @@
 </svelte:head>
 
 <article class="relative">
+  <div class="max-w-2xl mx-auto">
   <h1 class="!mt-0 !mb-2">
     <a class="!font-medium" href={$page.url.pathname}>
       {title}
@@ -92,14 +93,17 @@
     •
     <span>{readingTime}</span>
   </div>
+</div>
 
   <div class="relative">
     <!-- render the post -->
+    <div class="max-w-2xl mx-auto">
     <svelte:component this={component} />
+    </div>
 
     <!-- table of contents -->
     <div class="hidden xl:block absolute not-prose left-[100%]" aria-label="Table of Contents">
-      <div class="fixed z-10 px-4 py-2 ml-8 top-[4.5rem]">
+      <div class="fixed z-10 px-4 py-2 ml-8 top-[5.5rem]">
         <!-- ignore h1 tags as they should only be used for the post title -->
         <ToC allowedHeadings={['h2', 'h3', 'h4', 'h5', 'h6']} />
       </div>

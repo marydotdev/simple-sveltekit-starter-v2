@@ -3,7 +3,7 @@
 
   export let href
   export let raised = true
-  export let size = 'medium' // small, medium, or large
+  export let size = 'small' // small, medium, or large
 
   let className = ''
 

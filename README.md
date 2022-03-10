@@ -1,7 +1,15 @@
-# sveltekit-blog-template
+# Simple SvelteKit Starter
 
-A SvelteKit blog template built on mdsvex and tailwind.
+This SvelteKit starter is based on [this awesome template](https://github.com/mattjennings/sveltekit-blog-template) by [Matt Jennings](https://mattjennings.io/)
 
-[Demo](https://sveltekit-blog-template.vercel.app)
+## Features
+
+-SvelteKit
+-TailwindCSS
+-MDSveX
+-Prism for syntax highlighting
+-SEO tags
+
+[Live Demo](https://simple-sveltekit-starter.vercel.app)
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2Fmattjennings%2Fsveltekit-blog-template)

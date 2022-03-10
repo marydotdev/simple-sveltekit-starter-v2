@@ -55,6 +55,19 @@
   export let posts
   export let page
 
+  let inputEl;
+	function focusSearch(e) {
+		if (e.key === '/' && inputEl) inputEl.select();
+	}
+
+  let searchTerm = "";
+
+  $: searchTerm
+
+  $: searchedPosts = posts.filter((post) => {
+    return post.title.toLowerCase().includes(searchTerm);
+  })
+
   $: isFirstPage = page === 1
   $: hasNextPage = posts[posts.length - 1]?.previous
 </script>
@@ -63,13 +76,33 @@
   <title>{name} | Posts</title>
 </svelte:head>
 
+<svelte:window on:keyup={focusSearch} />
+
 <div class="flex flex-col flex-grow">
+  <h1 class="!text-5xl sm:!text-7xl !font-bold !mb-8">Posts</h1>
+
+  <input 
+  aria-label="Search posts"
+  type="text" 
+  placeholder="Press / to search" 
+  bind:value={searchTerm}
+  bind:this={inputEl}
+  class="block w-full rounded-md border border-gray-200 bg-white px-4 py-2 text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-900 dark:bg-gray-800 dark:text-gray-100"
+   />
   <div class="flex-grow divide-y divide-slate-300 dark:divide-slate-700">
-    {#each posts as post}
-      <div class="py-8 first:pt-0">
-        <PostPreview {post} />
+    {#if searchedPosts.length}
+      {#each searchedPosts as post}
+        <div class="py-8 hover:transform hover:scale-[1.02] transition-all duration-200">
+          <PostPreview {post} />
+        </div>
+      {/each}
+      {:else}
+      <div class="py-8">
+        <p>No results found for {searchTerm}.</p>
+
+        <button class="p-2 bg-slate-500" on:click={() => (searchTerm = '')}>Clear your search</button>
       </div>
-    {/each}
+      {/if}
   </div>
 
   <!-- pagination -->
