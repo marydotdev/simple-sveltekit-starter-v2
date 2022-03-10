@@ -8,11 +8,12 @@ This SvelteKit starter is based on [this awesome template](https://github.com/ma
 
 ## Features
 
--SvelteKit
--TailwindCSS
--MDSveX
--Prism for syntax highlighting
--SEO tags
+- SvelteKit
+- TailwindCSS
+- MDSveX
+- Prism for syntax highlighting
+- SEO tags
+- Dark Mode
 
 [Live Demo](https://simple-sveltekit-starter.vercel.app)
 
