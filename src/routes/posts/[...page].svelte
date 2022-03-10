@@ -98,9 +98,9 @@
       {/each}
       {:else}
       <div class="py-8">
-        <p>No results found for {searchTerm}.</p>
+        <p>No results found for '{searchTerm}'.</p>
 
-        <button class="p-2 bg-slate-500" on:click={() => (searchTerm = '')}>Clear your search</button>
+        <button class="p-2 bg-slate-900/10 text-slate-900 dark:bg-slate-100/10 dark:text-slate-100" on:click={() => (searchTerm = '')}>Clear your search</button>
       </div>
       {/if}
   </div>

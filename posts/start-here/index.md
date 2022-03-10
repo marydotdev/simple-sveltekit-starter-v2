@@ -9,11 +9,11 @@ date: 2022-03-10
 
 This starter is based off [this awesome template](https://github.com/mattjennings/sveltekit-blog-template) by [Matt Jennings](https://twitter.com/mattjennings44). If you haven't already, read [Matt's post](https://sveltekit-blog-template.vercel.app/posts/getting-started) on how the starter works and come back after to read about what I've added.
 
-## Additional Info
+## Minor Additions
 
 I've added a couple more exports to `src/lib/info.js` file for social media links. Update them with your own info and links, or delete the SocialLinks component all together, up to you!
 
----
+## I also added the search bar on the posts page, it currently searches the posts by title.
 
 ## Additional Components
 

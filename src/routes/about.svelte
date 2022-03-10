@@ -1,6 +1,11 @@
 <script>
+    import { name } from '$lib/info.js';
     import SocialLinks from "$lib/components/SocialLinks.svelte";
 </script>
+
+<svelte:head>
+  <title>{name} | About</title>
+</svelte:head>
 
 <div class="flex flex-col flex-grow not-prose text-slate-900 dark:text-slate-100">
     <h1 class="font-bold text-5xl sm:text-7xl pb-8 sm:pb-12">
