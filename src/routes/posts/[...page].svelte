@@ -92,7 +92,7 @@
   <div class="flex-grow divide-y divide-slate-300 dark:divide-slate-700">
     {#if searchedPosts.length}
       {#each searchedPosts as post}
-        <div class="py-8 hover:transform hover:scale-[1.02] transition-all duration-200">
+        <div class="py-8 sm:hover:transform sm:hover:scale-[1.02] sm:transition-all sm:duration-200">
           <PostPreview {post} />
         </div>
       {/each}

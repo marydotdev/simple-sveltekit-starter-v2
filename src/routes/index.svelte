@@ -40,7 +40,7 @@
   </h2>
   <div class="grid gap-4 grid-cols-1 sm:grid-cols-2">
     {#each recentPosts as post}
-      <div class="flex px-6 py-4 rounded-2xl bg-slate-900/10 dark:bg-slate-100/10 hover:transform hover:scale-[1.02] hover:shadow-lg transition-all duration-200">
+      <div class="flex px-6 py-4 rounded-2xl bg-slate-900/10 dark:bg-slate-100/10 sm:hover:transform sm:hover:scale-[1.02] sm:hover:shadow-lg sm:transition-all sm:duration-200">
         <PostPreview {post} small />
       </div>
     {/each}
